@@ -1,0 +1,120 @@
+/* Aplica uma fonte personalizada ao conteúdo principal */
+html,body {
+    height: 100%; /* Garante que o corpo e o HTML ocupem toda a altura da tela */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;  
+    background-image: url('ffixv1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  
+    justify-content: space-between; 
+}
+
+header {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    padding: 0 20px;    
+    color: white;
+    width: 100%;
+    
+}
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.container
+{
+    display: flex;
+}
+
+#fflogo {
+    flex: 0;
+    max-height: 100px;
+}
+
+#ffixv2Image
+{   
+    width: 600px;
+    height: 300px;
+
+}
+
+h1 {
+    flex: 1; /* Faz o h1 ocupar o espaço central */
+    text-align: center; /* Centraliza o texto do h1 */
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 40px;
+    margin: 10px 10px 10px; /* Espaçamento entre o título e os links */
+    gap: 20px; /* Espaço entre os links */
+    text-align: center;
+}
+
+
+/* Estilo do section */
+section {    
+    width: 50%; /* Ocupa 70% da largura */    
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada do Google Fonts */
+    padding: 20px; /* Espaçamento interno */
+    padding-left: 30px; /* Espaço à esquerda */
+    padding-right: 30px; /* Espaço à direita */
+    flex: 1;
+    background-color: #333;
+    border-radius: 10px; /* Arredonda os cantos da borda */
+    text-align: center;
+    
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+/* Estilo do aside */
+aside {
+    width: 250px;
+    margin-left: 10px;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Layout de duas colunas para section e aside */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo principal */
+}
+
+/* Efeito hover nos links */
+header nav a, aside a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover, aside a:hover {
+    color: rgb(192, 121, 14); /* Muda a cor quando o mouse passa */
+}
